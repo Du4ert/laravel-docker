@@ -40,7 +40,10 @@ services:
       - ./src:/var/www/laravel
     entrypoint: ["php", "/var/www/laravel/artisan"]
 
-volumes:
-  db_data:
-  volumes:
-  - ./mysql:/var/lib/mysql
+  npm:
+    build:
+      context: dockerfiles
+      dockerfile: npm.Dockerfile
+    volumes:
+      - ./src:/var/www/laravel
+    entypoint: ["npm"]

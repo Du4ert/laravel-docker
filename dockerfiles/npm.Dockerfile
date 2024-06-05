@@ -1,4 +1,4 @@
-FROM npm:latest
+FROM node:current-alpine
 
 WORKDIR /var/www/laravel
 
