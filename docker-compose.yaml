@@ -46,4 +46,4 @@ services:
       dockerfile: npm.Dockerfile
     volumes:
       - ./src:/var/www/laravel
-    entypoint: ["npm"]
+    entrypoint: ["npm"]
