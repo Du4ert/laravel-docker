@@ -8,6 +8,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - ./src:/var/www/laravel
+    restart: always
     depends_on:
       - mysql
       - php
@@ -29,6 +30,7 @@ services:
       - env/mysql.env
     ports:
       - "30306:3306"
+    restart: always
     networks:
       - conf
     volumes:
