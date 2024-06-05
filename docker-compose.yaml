@@ -47,3 +47,6 @@ services:
     volumes:
       - ./src:/var/www/laravel
     entrypoint: ["npm"]
+
+volumes:
+  db_data:
