@@ -26,8 +26,8 @@ services:
         - certbot-etc:/etc/letsencrypt
         - ./src:/var/www/laravel
         - "./log/letsencrypt:/var/log/letsencrypt"
-      # command: certonly --webroot --webroot-path=/var/www/laravel/public --email du4ert@gmail.com --agree-tos --no-eff-email -d conf-genbio.ru
-      command: certonly --webroot --webroot-path=/var/www/laravel/public --email du4ert@gmail.com --agree-tos --no-eff-email --force-renewal -d conf-genbio.ru
+      command: certonly --webroot --webroot-path=/var/www/laravel/public --email du4ert@gmail.com --agree-tos --no-eff-email -d conf-genbio.ru
+      # command: certonly --webroot --webroot-path=/var/www/laravel/public --email du4ert@gmail.com --agree-tos --no-eff-email --force-renewal -d conf-genbio.ru
 
 
   php:
